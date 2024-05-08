@@ -34,11 +34,11 @@ public class UserService {
 	}
 	
 	public void delete(Long id) {
-        if (!repository.existsById(id)) {
-            throw new ResourceNotFoundException(id);
-        }
-        try {
-        	repository.deleteById(id);
+		if (!repository.existsById(id)) {
+			throw new ResourceNotFoundException(id);
+	      }
+		try {
+	        repository.deleteById(id);
         } catch (DataIntegrityViolationException e) {
         	throw new DatabaseException("Violação de integridade de dados: " + e.getMessage());
         }

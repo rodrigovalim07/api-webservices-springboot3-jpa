@@ -24,16 +24,12 @@ Um mecanismo de tratamento de exceções foi implementado para lidar com situaç
 4. Execute a classe principal `CursoApplication`.
 5. O servidor estará em execução em [http://localhost:8080](http://localhost:8080).
 
-#### Observação: População do Banco de Dados
-
-Para utilizar o aplicativo com dados, é necessário popular manualmente o banco de dados com algumas informações iniciais. Recomendamos que você insira os dados necessários antes de executar o projeto.
-
 ## Endpoints Disponíveis
 
 - **`/users`**: CRUD para usuários.
-- **`/categories`**: Get por id (/{id}) e por todas as categorias disponíveis.
-- **`/products`**: Get por id (/{id}) e todos os produtos.
-- **`/orders`**: Get por id (/{id}) e todos os pedidos.
+- **`/categories`**: Todas as categorias disponíveis e Get por id (/{id}).
+- **`/products`**: Todos os produtos e Get por id (/{id}).
+- **`/orders`**: Todos os pedidos e Get por id (/{id}).
 
 ## Tecnologias usadas
 - Spring Boot
